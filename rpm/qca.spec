@@ -4,7 +4,7 @@ Version:        2.3.4
 Release:        1
 License:        Lesser GNU General Public License
 URL:            https://github.com/KDE/qca
-Source0:        https://invent.kde.org/libraries/qca/-/archive/v2.3.4/qca-v2.3.4.tar.gz
+Source0:        %{name}-%{version}.tar.xz
 
 Requires:  ca-certificates
 Requires(post): /sbin/ldconfig
@@ -32,11 +32,12 @@ Provides:       %{name}-devel
 Contains files needed to development with %{name}.
 
 %prep
-%setup -q -n qca-%{version}
+%autosetup -n %{name}-%{version}/upstream -p1
 
 %build
-mkdir -p build
-pushd build
+touch .git                           
+mkdir -p build                       
+pushd build                 
 
 %cmake .. \
   -D QCA_INSTALL_IN_QT_PREFIX=OFF \
