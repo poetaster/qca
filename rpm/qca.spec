@@ -10,7 +10,9 @@ Release: 1%{?dist}
 License: LGPLv2+
 URL:     https://userbase.kde.org/QCA
 Source0: %{name}-%{version}.tar.xz
+
 ## upstream patches
+Patch0: 001-version.patch
 
 ## upstreamable patches
 
