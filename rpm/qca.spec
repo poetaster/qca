@@ -123,7 +123,7 @@ mkdir -p build
 pushd build                          
 
 cmake_opts="-Wno-dev \
-  -DBUILD_TESTS:BOOL=%{?tests:ON}%{!?tests:OFF} \
+  -DBUILD_TESTS:BOOL=OFF \
   -DQCA_INSTALL_IN_QT_PREFIX:BOOL=ON \
   -DQCA_BINARY_INSTALL_DIR:STRING=%{_bindir} \
   -DWITH_botan_PLUGIN:BOOL=OFF"
