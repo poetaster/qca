@@ -110,7 +110,6 @@ Summary: Pkcs11 plugin for the Qt5 Cryptographic Architecture
 Requires: %{name}-qt5%{?_isa} = %{version}-%{release}
 %description qt5-softstore
 %{summary}.
-%endif
 
 
 %prep
