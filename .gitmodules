@@ -1,3 +1,6 @@
 [submodule "upstream"]
 	path = upstream
 	url = https://github.com/ron282/qca
+[submodule "ron282"]
+	path = ron282
+	url = https://github.com/ron282/qca

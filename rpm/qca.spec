@@ -33,7 +33,7 @@ Provides:       %{name}-devel
 Contains files needed to development with %{name}.
 
 %prep
-%autosetup -n %{name}-%{version}/upstream -p1
+%autosetup -n %{name}-%{version}/ron282 -p1
 
 %build
 touch .git                           
