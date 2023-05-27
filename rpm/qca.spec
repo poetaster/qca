@@ -17,10 +17,10 @@ Source0: %{name}-%{version}.tar.xz
 BuildRequires: cmake >= 2.8.12
 BuildRequires: gcc-c++
 BuildRequires: libgcrypt-devel
-BuildRequires: pkgconfig(libcrypto) pkgconfig(libssl)
+BuildRequires: pkgconfig(libcrypto) 
+BuildRequires: pkgconfig(libssl)
 BuildRequires: pkgconfig(nss)
 BuildRequires: pkgconfig(libpkcs11-helper-1)
-BuildRequires: pkgconfig(libsasl2)
 
 
 %if 0%{?doc}
