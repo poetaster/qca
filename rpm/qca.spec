@@ -5,7 +5,7 @@ Release:        1
 License:        Lesser GNU General Public License
 URL:            https://github.com/KDE/qca
 Source0:        %{name}-%{version}.tar.xz
-Patch0:         001-version.patch
+#Patch0:         001-version.patch
 
 Requires:  ca-certificates
 Requires(post): /sbin/ldconfig
