@@ -41,10 +41,10 @@ mkdir -p build
 pushd build                 
 
 %cmake .. \
-  -D QCA_INSTALL_IN_QT_PREFIX=OFF \
-  -D LIB_INSTALL_DIR=%{_libdir} \
-  -D BUILD_PLUGINS=AUTO \
-  -D BUILD_TESTS=OFF 
+  -DQCA_INSTALL_IN_QT_PREFIX=OFF \
+  -DLIB_INSTALL_DIR=%{_libdir} \
+  -DBUILD_PLUGINS=AUTO \
+  -DBUILD_TESTS=OFF 
 
 %make_build 
 popd
